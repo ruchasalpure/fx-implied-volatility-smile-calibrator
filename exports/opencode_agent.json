@@ -1,0 +1,8 @@
+{
+  "agent_id": "fx-implied-volatility-smile-calibrator",
+  "protocol": "opencode/v1",
+  "capabilities": [
+    "autonomous",
+    "governed"
+  ]
+}
