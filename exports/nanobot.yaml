@@ -1,4 +1,0 @@
-spec: nanobot/v1
-name: fx-implied-volatility-smile-calibrator
-runtime: python3.11
-entrypoint: agent.py

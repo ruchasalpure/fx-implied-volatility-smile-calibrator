@@ -1,26 +1,30 @@
 spec_version: "0.1.0"
-name: "fx-implied-volatility-smile-calibrator"
-version: "1.0.0"
-category: "finance"
+name: fx-implied-volatility-smile-calibrator
+version: 1.0.0
+description: Calibrates SABR and stochastic local volatility models to high-frequency FX vanilla option delta surfaces without arbitrage violations.
 author: "Rucha Salpure"
-description: "Calibrates SABR and stochastic local volatility models to high-frequency FX vanilla option delta surfaces without arbitrage violations"
-capabilities:
-  - "sabr-smile-calibration"
-  - "autonomous-decision-making"
-  - "explainable-auditing"
-  - "multi-agent-collaboration"
+license: MIT
+model:
+  preferred: claude-opus-4-6
+  fallback:
+    - claude-sonnet-4-5-20250929
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
 skills:
-  - "sabr-smile-calibration"
-tools:
-  - "python_executor"
-  - "audit_logger"
-  - "schema_validator"
+  - sabr-smile-calibration
+tools: []
+delegation:
+  mode: auto
 runtime:
-  environment: "python3.11"
-  memory_limit: "4GB"
-  timeout_seconds: 300
-governance:
-  audit_logging: true
-  human_in_the_loop: false
-  maker_checker: true
-  explainability_required: true
+  max_turns: 50
+  timeout: 300
+compliance:
+  risk_tier: standard
+  frameworks: []
+tags:
+  - finance
+  - autonomous-agent
+  - opengap-verified
+metadata:
+  repository: "https://github.com/ruchasalpure/fx-implied-volatility-smile-calibrator"
